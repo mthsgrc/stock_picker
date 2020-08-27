@@ -10,16 +10,11 @@ def stock_picker(array)
     for j in (i..array.length - 1)
 
       profit = array[j] - price
-      p " #{array[j]} - #{price} ==== #{profit}"
 
       if best_profit == nil || profit > best_profit
         best_profit = profit
-        p "BEST PROFIT => #{best_profit}"
         
         best_day_array = [i, j]
-        p "**** best_day_array = [#{i}, #{j}] **** "
-
-        puts
 
       end
     end
